@@ -6,6 +6,6 @@ typedef struct {
     char *name;
     char *phone;
     double salary;
-} Employee, *PtrToEmployee
+} Employee, *PtrToEmployee;
 
-typedef const Employee *PtrToEmployee;
+typedef const Employee *PtrToConstEmployee;

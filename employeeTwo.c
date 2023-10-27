@@ -27,3 +27,22 @@ static int compareEmployeeSalary(const void *targetPtr, PtrToConstEmployee table
 {
     return * (double *) targetPtr != tableValuePtr->salary;
 }
+
+//functions to use in main
+PtrToEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int size, long number)
+{
+    return searchEmployeeTable(ptr, size, &number, compareEmployeeNumber);
+}
+PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int size, char* name)
+{
+    return searchEmployeeTable(ptr, size, name, compareEmployeeName);
+}
+//added for quiz
+PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int size, char* phone)
+{
+    return searchEmployeeTable(ptr, size, phone, compareEmployeePhone);
+}
+PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int size, double salary)
+{
+    return searchEmployeeTable(ptr, size, &salary, compareEmployeeSalary);
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include "employee.h"
@@ -10,6 +9,3 @@ Employee EmployeeTable[] = {
     {5045, "Brian Height",      "714-555-2749", 8.32}
 };
 const int EmployeeTableEntries = sizeof(EmployeeTable)/sizeof(EmployeeTable[0]);
-=======
-s
->>>>>>> d25131cf7c6714ba270337fc4edd2b7ee4a70306
